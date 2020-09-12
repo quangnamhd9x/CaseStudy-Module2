@@ -11,13 +11,37 @@
 <style>
     body {
         background-image: url("https://aphoto.vn/wp-content/uploads/2018/04/typo-anh-ky-yeu-dep-4.jpg");
+        background-repeat: unset;
+        background-position: left top;
+        background-attachment: fixed;
     }
     table {
         background-image: url("https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-sang-2.jpg");
     }
+    a {
+        color: white;
+    }
+    th {
+        text-align: center;
+    }
+    h1 {
+        color: white;
+        font-family: -apple-system;
+        font-size: 50px;
+        text-align: center;
+    }
 </style>
 <body>
-<button><a href="index.php?page=add">ADD</a></button>
+<h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
+<div align="center"><button class="btn btn-success"><a href="index.php?page=add">Thêm học sinh</a></button>
+<button class="btn btn-success"><a href="index.php?page=add">Xem điểm</a></button>
+<button class="btn btn-success"><a href="index.php?page=add">Xem thời khóa biểu</a></button>
+<button class="btn btn-success"><a href="index.php?page=add">Đặt lời nhắc cho lớp</a></button>
+<button class="btn btn-success"><a href="index.php?page=add">Top thi đua trong lớp</a></button>
+<button class="btn btn-success"><a href="index.php?page=add">Học sinh lưu tâm</a></button>
+<button class="btn btn-warning"><a href="index.php?page=add">Trở về</a></button>
+</div>
+<br>
 <table align="center" class="table" style="width: auto">
     <thead class="thead-dark">
     <tr>
@@ -39,8 +63,8 @@
             <td><?php echo $student->getBirthday(); ?></td>
             <td><?php echo $student->getAddress(); ?></td>
             <td><img style="width: 100px" src="<?php echo $student->getImage(); ?>"></td>
-            <td><a href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập nhật</a> </td>
-            <td><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=<?php echo $student->getId(); ?>">Xóa</a> </td>
+            <td><button class="btn btn-info"><a href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập nhật</a> </button></td>
+            <td><button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=<?php echo $student->getId(); ?>">Xóa</a> </button></td>
         </tr>
     <?php endforeach; ?>
     </tbody>

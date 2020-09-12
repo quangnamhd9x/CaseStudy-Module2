@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
     <table>
         <tr>
             <td>Họ tên</td>
