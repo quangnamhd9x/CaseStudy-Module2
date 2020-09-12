@@ -21,7 +21,7 @@ class StudentModel
         foreach ($result as $items) {
             $student = new Student($items["name"], $items["birthday"], $items["address"], $items["gender"]);
             $student->setId($items["id"]);
-            $img = $items["image"] == "src/uploads/" ? "src/uploads/default.png" : $items["image"];
+            $img = $items["image"] == "src/uploads/" ? "src/uploads/default.jpg" : $items["image"];
             $student->setImage($img);
             array_push($array, $student);
         }
@@ -60,20 +60,18 @@ class StudentModel
 
     public function updateStudent($student)
     {
-        $sql = "UPDATE 11A2 
+        {
+            $sql = "UPDATE 11A2 
                 SET name = :name, 
                 birthday = :birthday,
-                address = :address,
-                image = :image,
-                gender = :gender, 
+                address = :address
                 WHERE id = :id";
-        $stmt = $this->database->prepare($sql);
-        $stmt->bindParam(":id", $student->getId());
-        $stmt->bindParam(":name", $student->getName());
-        $stmt->bindParam(":birthday", $student->getBirthday());
-        $stmt->bindParam(":address", $student->getAddress());
-        $stmt->bindParam(":image", $student->getImage());
-        $stmt->bindParam(":gender", $student->getGender());
-        $stmt->execute();
+            $stmt = $this->database->prepare($sql);
+            $stmt->bindParam(":id", $student->getId());
+            $stmt->bindParam(":name", $student->getName());
+            $stmt->bindParam(":birthday", $student->getBirthday());
+            $stmt->bindParam(":address", $student->getAddress());
+            $stmt->execute();
+        }
     }
 }

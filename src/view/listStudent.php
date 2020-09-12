@@ -42,7 +42,7 @@
 <button class="btn btn-warning"><a href="index.php?page=add">Trở về</a></button>
 </div>
 <br>
-<table align="center" class="table" style="width: auto">
+<table align="center" class="table" style="width: auto;border-radius: 15px">
     <thead class="thead-dark">
     <tr>
         <th scope="col">STT</th>
