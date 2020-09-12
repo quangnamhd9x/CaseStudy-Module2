@@ -34,7 +34,7 @@
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center"><button class="btn btn-success"><a href="index.php?page=add">Thêm học sinh</a></button>
-<button class="btn btn-success"><a href="index.php?page=add">Xem điểm</a></button>
+<button class="btn btn-success"><a href="src/view/subjects/subjects.html">Xem điểm</a></button>
 <button class="btn btn-success"><a href="index.php?page=add">Xem thời khóa biểu</a></button>
 <button class="btn btn-success"><a href="index.php?page=add">Đặt lời nhắc cho lớp</a></button>
 <button class="btn btn-success"><a href="index.php?page=add">Top thi đua trong lớp</a></button>
