@@ -39,7 +39,7 @@
 <button class="btn btn-success"><a href="index.php?page=add">Đặt lời nhắc cho lớp</a></button>
 <button class="btn btn-success"><a href="index.php?page=add">Top thi đua trong lớp</a></button>
 <button class="btn btn-success"><a href="index.php?page=add">Học sinh lưu tâm</a></button>
-<button class="btn btn-warning"><a href="index.php?page=add">Trở về</a></button>
+<button class="btn btn-danger"><a href="http://localhost/CaseStudy-School/login/login.html">Đăng xuất</a></button>
 </div>
 <br>
 <table align="center" class="table" style="width: auto;border-radius: 15px">

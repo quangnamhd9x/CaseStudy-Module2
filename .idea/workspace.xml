@@ -20,17 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/files/img/tkb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/college_students_outdoor-wallpaper-1920x1080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/default.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CaseStudy-School.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CaseStudy-School.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/background1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/2020-07-14-15-24-17-062_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/58842472_1008056589394186_2617387850827563008_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/83502009_2582181232056528_5316367779492790272_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/89959709_1591778264306034_6360432315780300800_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/FB_IMG_1579385259574.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/ngoc-trinh-2 (1).jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/StudentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/StudentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/addStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/options/tkb.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/options/tkb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/listStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/listStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/subjects/subjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects/subjects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/updateStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/updateStudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,18 +73,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/uploads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/login" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/login" />
       <recent name="$PROJECT_DIR$/src/uploads" />
       <recent name="$PROJECT_DIR$/src/files/img" />
       <recent name="$PROJECT_DIR$/src/view" />
       <recent name="$PROJECT_DIR$/src/files/backgrounds" />
-      <recent name="$PROJECT_DIR$/file/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599884224021</updated>
       <workItem from="1599884225185" duration="22487000" />
-      <workItem from="1599908941656" duration="4669000" />
+      <workItem from="1599908941656" duration="11583000" />
     </task>
     <servers />
   </component>
@@ -126,19 +127,23 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1599896359509" />
-    <state x="425" y="103" width="545" height="598" key="NewPhpClassDialog" timestamp="1599885868712">
+    <state x="425" y="103" width="545" height="598" key="NewPhpClassDialog" timestamp="1599919813148">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="425" y="99" width="505" height="568" key="NewPhpClassDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884399589" />
-    <state x="425" y="103" width="545" height="598" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1599885868712" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1599894091798">
+    <state x="425" y="103" width="545" height="598" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1599919813148" />
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1599919264444">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="478" y="305" width="399" height="156" key="NewPhpFileDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884373986" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1599894091798" />
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1599919264444" />
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1599886244398">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1599886244398" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599918090448">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1599918090448" />
   </component>
 </project>
