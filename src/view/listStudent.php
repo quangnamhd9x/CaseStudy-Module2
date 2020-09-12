@@ -10,35 +10,42 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     body {
-        background-image: url("../files/backgrounds/background1.jpeg");
-        background-color: burlywood;
+        background-image: url("https://aphoto.vn/wp-content/uploads/2018/04/typo-anh-ky-yeu-dep-4.jpg");
+    }
+    table {
+        background-image: url("https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-sang-2.jpg");
     }
 </style>
 <body>
 <button><a href="index.php?page=add">ADD</a></button>
-    <table style="color: white">
-        <tr>
-            <th>STT</th>
-            <th>Name</th>
-            <th>Giới tính</th>
-            <th>Ngày sinh</th>
-            <th>Địa chỉ</th>
-            <th>Ảnh</th>
-            <th>Tùy chọn</th>
-        </tr>
-        <?php foreach ($students as $key=>$student): ?>
+<table align="center" class="table" style="width: auto">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">STT</th>
+        <th scope="col">Name</th>
+        <th scope="col">Giới tính</th>
+        <th scope="col">Ngày sinh</th>
+        <th scope="col">Địa chỉ</th>
+        <th scope="col">Ảnh</th>
+        <th colspan="2" scope="col">Tùy chọn</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($students as $key=>$student): ?>
         <tr>
             <td><?php echo ++$key; ?></td>
             <td><?php echo $student->getName(); ?></td>
             <td><?php echo $student->getGender(); ?></td>
             <td><?php echo $student->getBirthday(); ?></td>
             <td><?php echo $student->getAddress(); ?></td>
-            <td><img style="width: 50px" src="<?php echo $student->getImage(); ?>"></td>
+            <td><img style="width: 100px" src="<?php echo $student->getImage(); ?>"></td>
             <td><a href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập nhật</a> </td>
             <td><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=<?php echo $student->getId(); ?>">Xóa</a> </td>
         </tr>
-        <?php endforeach; ?>
-    </table>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -18,13 +18,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/files/backgrounds" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/view" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/view" />
       <recent name="$PROJECT_DIR$/src/files/backgrounds" />
       <recent name="$PROJECT_DIR$/src/uploads" />
       <recent name="$PROJECT_DIR$/file/images" />
@@ -38,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599884224021</updated>
-      <workItem from="1599884225185" duration="15001000" />
+      <workItem from="1599884225185" duration="17731000" />
     </task>
     <servers />
   </component>
