@@ -10,13 +10,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     body {
-        background-image: url("background1.jpeg");
+        background-image: url("../image/background1.jpeg");
         background-repeat: repeat;
         background-position: left top;
         background-attachment: fixed;
     }
     table {
-        background-image: url("login.jpg");
+        background-image: url("../image/login.jpg");
         color: white;
     }
     a {
@@ -37,7 +37,7 @@
 <br><br><br><br>
 <br><br><br>
 
-<form method="POST" action="http://localhost/CaseStudy-School/index.php" >
+<form method="POST" action="../../action/login.php" >
     <table align="center" class="table" style="width: auto; border-radius: 20px">
         <thead class="thead-dark">
         <tr>
@@ -52,7 +52,7 @@
         </tr>
         <tr>
             <td><b><button type="button" style="background-color: black; color: white" class="btn btn-secondary">Mật Khẩu:</b></td>
-            <td><input style="width: 280px; height: 40px" name="gender" type="password" required></td>
+            <td><input style="width: 280px; height: 40px" name="password" type="password" required></td>
         <tr>
             <td></td>
             <td>

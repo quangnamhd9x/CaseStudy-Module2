@@ -15,8 +15,8 @@
         background-position: left top;
         background-attachment: fixed;
     }
-    table {
-        background-image: url("https://i.pinimg.com/originals/8c/eb/bb/8cebbbcba325a4f9b5262ddce011fad0.jpg");
+    .table {
+        background-color: white;
     }
     a {
         color: white;
@@ -60,7 +60,7 @@
         </tr>
         <tr>
             <td>Ảnh:</td>
-            <td><input name="image" type="file" value="<?php echo $student["image"]; ?>"></td>
+            <td><input name="image" type="file"></td>
         </tr>
         <tr>
             <td></td>

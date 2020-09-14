@@ -53,11 +53,20 @@ class StudentController
             $name = $_REQUEST['name'];
             $birthday = $_REQUEST['birthday'];
             $address = $_REQUEST['address'];
-            $image = $_REQUEST['image'];
+            $std = $this->studentController->getStudentById($id);
+            $img = $std["image"];
             $gender = $_REQUEST['gender'];
-            $student = new Student($name, $birthday, $address, $image, $gender);
+            $file = $_FILES['image']['tmp_name'];
+            $path = "src/uploads/" . $_FILES['image']['name'];
+            if (move_uploaded_file($file, $path)) {
+                echo "Tải tập tin thành công";
+            } else {
+                echo "Tải tập tin thất bại";
+            }
+            $image = $path == "src/uploads/"?$img:$path;
+            $student = new Student($name, $birthday, $address, $gender);
             $student->setId($id);
-
+            $student->setImage($image);
             $this->studentController->updateStudent($student);
             header('location:index.php');
         }

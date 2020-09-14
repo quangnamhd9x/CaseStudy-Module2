@@ -33,11 +33,11 @@
 </style>
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
-<div><button style="font-size: 20px; margin-left: 20px" class="btn btn-warning"><a href="../../../index.php">Trở về</a></button>
+<div><button style="font-size: 20px; margin-left: 20px" class="btn btn-warning"><a href="../../index.php">Trở về</a></button>
 </div>
 <br>
 <div align="center">
-    <img style="border-radius: 15px" src="../../files/img/tkb.png">
+    <img id="myImage" style="border-radius: 15px" src="../image/tkb.png">
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

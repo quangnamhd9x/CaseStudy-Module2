@@ -14,7 +14,7 @@ class StudentModel
 
     public function getAllStudent()
     {
-        $sql = "SELECT * FROM 11A2";
+        $sql = "SELECT * FROM students";
         $stmt = $this->database->query($sql);
         $result = $stmt->fetchAll();
         $array = [];
@@ -30,7 +30,7 @@ class StudentModel
 
     public function addStudent($student)
     {
-        $sql = "INSERT INTO `11A2`(`name`, `birthday`, `address`, `image`, `gender`) VALUES (:name, :birthday, :address, :image, :gender)";
+        $sql = "INSERT INTO `students`(`name`, `birthday`, `address`, `image`, `gender`) VALUES (:name, :birthday, :address, :image, :gender)";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":name", $student->getName());
         $stmt->bindParam(":birthday", $student->getBirthday());
@@ -42,7 +42,7 @@ class StudentModel
 
     public function getStudentById($id)
     {
-        $sql = "SELECT * FROM 11A2 WHERE id = :id";
+        $sql = "SELECT * FROM students WHERE id = :id";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":id", $id);
         $stmt->execute();
@@ -52,7 +52,7 @@ class StudentModel
 
     public function deleteStudent($id)
     {
-        $sql = "DELETE FROM 11A2 WHERE id = :id";
+        $sql = "DELETE FROM students WHERE id = :id";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":id", $id);
         $stmt->execute();
@@ -61,16 +61,18 @@ class StudentModel
     public function updateStudent($student)
     {
         {
-            $sql = "UPDATE 11A2 
+            $sql = "UPDATE students 
                 SET name = :name, 
                 birthday = :birthday,
-                address = :address
+                address = :address,
+                image = :image
                 WHERE id = :id";
             $stmt = $this->database->prepare($sql);
             $stmt->bindParam(":id", $student->getId());
             $stmt->bindParam(":name", $student->getName());
             $stmt->bindParam(":birthday", $student->getBirthday());
             $stmt->bindParam(":address", $student->getAddress());
+            $stmt->bindParam(":image", $student->getImage());
             $stmt->execute();
         }
     }

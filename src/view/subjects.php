@@ -33,7 +33,7 @@
 </style>
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
-<div><button style="font-size: 20px; margin-left: 20px" class="btn btn-warning"><a href="../../../index.php">Trở về</a></button>
+<div><button style="font-size: 20px; margin-left: 20px" class="btn btn-warning"><a href="../../index.php">Trở về</a></button>
 </div>
 <br>
 <table style="border-radius: 15px" align="center" cellpadding="15px">
