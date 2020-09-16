@@ -33,12 +33,13 @@
 </style>
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
-<div align="center"><button class="btn btn-success"><a href="index.php?page=add">Thêm học sinh</a></button>
-    <button class="btn btn-success"><a href="src/view/subjects.php">Xem điểm</a></button>
-    <button class="btn btn-success"><a href="src/view/tkb.php">Xem thời khóa biểu</a></button>
-    <button class="btn btn-success"><a href="index.php?page=add">Đặt lời nhắc cho lớp</a></button>
-    <button class="btn btn-success"><a href="index.php?page=add">Top thi đua trong lớp</a></button>
-    <button class="btn btn-success"><a href="index.php?page=add">Học sinh lưu tâm</a></button>
+<div align="center">
+    <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
+    <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
+    <a class="btn btn-success" href="../schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-success" href="index.php?page=add">Đặt lời nhắc cho lớp</a>
+    <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
@@ -49,7 +50,7 @@
         <th scope="col">Họ và tên</th>
         <th scope="col">Môn học</th>
         <th scope="col">Điểm</th>
-        <!--        <th colspan="2" scope="col">Tùy chọn</th>-->
+<!--        <th colspan="2" scope="col">Tùy chọn</th>-->
     </tr>
     </thead>
     <tbody>
@@ -59,7 +60,7 @@
             <td><?php echo $score->getStudentName(); ?></td>
             <td><?php echo $score->getSubjectName(); ?></td>
             <td align="center"><?php echo $score->getScore(); ?></td>
-            <!--            <td><button class="btn btn-info"><a href="index.php?page=update&id=--><?php //echo $student->getId(); ?><!--">Cập nhật</a> </button></td>-->
+<!--            <td><button class="btn btn-info"><a href="index.php?page=update&id=--><?php //echo $student->getId(); ?><!--">Cập nhật</a></button></td>-->
             <!--            <td><button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=--><?php //echo $student->getId(); ?><!--">Xóa</a> </button></td>-->
         </tr>
     <?php endforeach; ?>

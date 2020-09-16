@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     body {
-        background-image: url("https://phunuvietnam.mediacdn.vn/media/news/7648557e5c7f1ecd407347dde3bd9927/a.jpg");
+        background-image: url("https://www.setaswall.com/wp-content/uploads/2017/03/Blue-Sky-And-Green-Grass-Wallpaper-1920x1200.jpg");
         background-repeat: unset;
         background-position: left top;
         background-attachment: fixed;
@@ -33,8 +33,8 @@
 </style>
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
-<div style="margin-left: 20px">
-    <button class="btn btn-warning"><a href="http://localhost/CaseStudy-School/index.php">Trở về</a></button>
+<div>
+    <a style="font-size: 20px; margin-left: 20px" class="btn btn-warning" href="CaseStudy-School/index.php">Trở về</a>
 </div>
 <br>
 <br>

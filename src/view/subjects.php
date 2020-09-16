@@ -33,24 +33,25 @@
 </style>
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
-<div><button style="font-size: 20px; margin-left: 20px" class="btn btn-warning"><a href="../../index.php">Trở về</a></button>
+<div>
+    <a style="font-size: 20px; margin-left: 20px" class="btn btn-warning" href="../../index.php">Trở về</a>
 </div>
 <br>
 <table style="border-radius: 15px" align="center" cellpadding="15px">
     <tr>
-        <td><button style="font-size: 50px; width: 300px; background-color: darkorange" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=1">Toán học</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: cornflowerblue" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=2">Vật lý</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: rebeccapurple" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=3">Hóa Học</a></button></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: darkorange" class="btn btn-success" href="../../index.php?page=viewSubject&id=1">Toán học</a></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: cornflowerblue" class="btn btn-success" href="../../index.php?page=viewSubject&id=2">Vật lý</></a></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: rebeccapurple" class="btn btn-success" href="../../index.php?page=viewSubject&id=3">Hóa Học</></a></td>
     </tr>
     <tr>
-        <td><button style="font-size: 50px; width: 300px" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=4">Sinh học</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: darkslategray" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=5">Tin học</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: deepskyblue" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=6">Tiếng Anh</a></button></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: green" class="btn btn-success" href="../../index.php?page=viewSubject&id=4">Sinh học</a></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: darkslategray" class="btn btn-success" href="../../index.php?page=viewSubject&id=5">Tin học</></a></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: deepskyblue" class="btn btn-success" href="../../index.php?page=viewSubject&id=6">Tiếng Anh</></a></td>
     </tr>
     <tr>
-        <td><button style="font-size: 50px; width: 300px; background-color: rosybrown" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=7">Ngữ văn</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: brown" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=8">Lịch sử</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: dodgerblue" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=9">Giáo dục</a></button></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: rosybrown" class="btn btn-success" href="../../index.php?page=viewSubject&id=7">Ngữ văn</></a></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: brown" class="btn btn-success" href="../../index.php?page=viewSubject&id=8">Lịch sử</></a></td>
+        <td><a style="font-size: 50px; width: 300px; background-color: dodgerblue" class="btn btn-success" href="../../index.php?page=viewSubject&id=9">Giáo dục</></a></td>
     </tr>
     <tr align="center"><td colspan="3"><button style="font-size: 50px; width: 600px; background-color: dodgerblue" class="btn btn-success"><a href="../../index.php?page=viewAllScore">Xem toàn bộ</a></button></td></tr>
 </table>
