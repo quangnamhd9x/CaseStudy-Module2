@@ -37,16 +37,17 @@ include_once "../../src/controller/ScoreController.php";
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center">
+    <a class="btn btn-warning" href="http://localhost/CaseStudy-School/index.php">Trở về</a>
     <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
-    <a class="btn btn-success" href="../schedule.php">Xem thời khóa biểu</a>
-    <a class="btn btn-success" href="index.php?page=add">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
-<table align="center" class="table" style="width: auto;border-radius: 15px">
+<table align="center" class="table" style="width: 1000px;border-radius: 15px">
     <thead class="thead-dark">
     <tr>
         <th scope="col">STT</th>

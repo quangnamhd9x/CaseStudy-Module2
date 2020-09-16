@@ -38,9 +38,9 @@
     <a class="btn btn-success" href="addStudent.php">Thêm học sinh</a>
     <a class="btn btn-success" href="subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="schedule.php">Xem thời khóa biểu</a>
-    <a class="btn btn-success" href="index.php?page=add">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
     <a class="btn btn-danger" href="http://localhost/CaseStudy-School/src/view/users/login.php">Đăng xuất</a>
 </div>
 <br>

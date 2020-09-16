@@ -53,7 +53,7 @@ include_once "src/controller/UserController.php";
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
-<table align="center" class="table" style="width: auto;border-radius: 15px">
+<table align="center" class="table" style="width: 1000px;border-radius: 15px">
     <thead class="thead-dark">
     <tr>
         <th scope="col">STT</th>

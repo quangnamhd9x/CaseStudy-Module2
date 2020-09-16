@@ -35,6 +35,9 @@
         font-size: 50px;
         text-align: center;
     }
+    input {
+        font-style: italic;
+    }
 </style>
 <body>
 <h1>
@@ -45,9 +48,9 @@
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/addStudent.php">Thêm học sinh</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>
-    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
@@ -58,11 +61,11 @@
         <thead class="thead-dark">
         <tr>
             <td>Họ tên:</td>
-            <td><input style="width: 280px" name="name" type="text" required></td>
+            <td><input placeholder="vd: Nguyễn Chi Pu" style="width: 280px" name="name" type="text" required></td>
         </tr>
         <tr>
             <td>Giới tính:</td>
-            <td><input style="width: 280px" name="gender" type="text" required></td>
+            <td><input style="width: 280px" placeholder="vd: Nữ" name="gender" type="text" required></td>
         </tr>
         <tr>
             <td>Ngày Sinh:</td>
@@ -70,7 +73,7 @@
         </tr>
         <tr>
             <td>Địa chỉ:</td>
-            <td><input style="width: 280px" name="address" type="text" required></td>
+            <td><input style="width: 280px" placeholder="vd: Hoài Đức - Hà Nội" name="address" type="text" required></td>
         </tr>
         <tr>
             <td>Ảnh:</td>
