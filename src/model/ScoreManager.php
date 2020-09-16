@@ -33,12 +33,18 @@ WHERE subjects.id = :id";
         }
         return $array;
     }
+    public function getScoreById($id)
+    {
+        $sql = "SELECT * FROM scores WHERE id = :id";
+        $stmt = $this->database->prepare($sql);
+        $stmt->bindParam(":id", $id);
+        $stmt->execute();
+        $data = $stmt->fetch();
+        return $data;
+    }
 
-
-
-
-
-    public function getAll(){
+    public function getAll()
+    {
         $sql = "SELECT scores.id, students.name, subjects.subject_name, scores.score
 FROM students
 INNER JOIN scores
@@ -49,65 +55,25 @@ ON scores.subject_id = subjects.id";
         $result = $stmt->fetchAll();
         $array = [];
         foreach ($result as $items) {
-            $scoreMath = new Score($items["name"], $items["subject_name"], $items["score"]);
-            $scoreMath->setId($items["id"]);
-            array_push($array, $scoreMath);
+            $score = new Score($items["name"], $items["subject_name"], $items["score"]);
+            $score->setId($items["id"]);
+            array_push($array, $score);
         }
         return $array;
     }
 
 
+    public function updateScore($score)
+    {
+        {
+            $sql = "UPDATE `scores` 
+SET `score`= :score 
+WHERE id = :id";
+            $stmt = $this->database->prepare($sql);
+            $stmt->bindParam(":id", $score->getId());
+            $stmt->bindParam(":score", $score->getScore());
+            $stmt->execute();
+        }
+    }
 
-
-
-
-
-//    public function addStudent($student)
-//    {
-//        $sql = "INSERT INTO `students`(`name`, `birthday`, `address`, `image`, `gender`) VALUES (:name, :birthday, :address, :image, :gender)";
-//        $stmt = $this->database->prepare($sql);
-//        $stmt->bindParam(":name", $student->getName());
-//        $stmt->bindParam(":birthday", $student->getBirthday());
-//        $stmt->bindParam(":address", $student->getAddress());
-//        $stmt->bindParam(":image", $student->getImage());
-//        $stmt->bindParam(":gender", $student->getGender());
-//        $stmt->execute();
-//    }
-//
-//    public function getStudentById($id)
-//    {
-//        $sql = "SELECT * FROM students WHERE id = :id";
-//        $stmt = $this->database->prepare($sql);
-//        $stmt->bindParam(":id", $id);
-//        $stmt->execute();
-//        $data = $stmt->fetch();
-//        return $data;
-//    }
-//
-//    public function deleteStudent($id)
-//    {
-//        $sql = "DELETE FROM students WHERE id = :id";
-//        $stmt = $this->database->prepare($sql);
-//        $stmt->bindParam(":id", $id);
-//        $stmt->execute();
-//    }
-//
-//    public function updateStudent($student)
-//    {
-//        {
-//            $sql = "UPDATE students
-//                SET name = :name,
-//                birthday = :birthday,
-//                address = :address,
-//                image = :image
-//                WHERE id = :id";
-//            $stmt = $this->database->prepare($sql);
-//            $stmt->bindParam(":id", $student->getId());
-//            $stmt->bindParam(":name", $student->getName());
-//            $stmt->bindParam(":birthday", $student->getBirthday());
-//            $stmt->bindParam(":address", $student->getAddress());
-//            $stmt->bindParam(":image", $student->getImage());
-//            $stmt->execute();
-//        }
-//    }
 }

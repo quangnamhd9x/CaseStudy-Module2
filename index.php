@@ -32,6 +32,9 @@ switch ($page) {
     case "viewSubject":
         $scoreController->displaySubject();
         break;
+    case "updateScore":
+        $scoreController->updateScore();
+        break;
     default:
         $studentController->displayAllStudent();
 }

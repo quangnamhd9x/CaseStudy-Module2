@@ -11,7 +11,7 @@
 <style>
     body {
         background-image: url("https://www.setaswall.com/wp-content/uploads/2017/03/Blue-Sky-And-Green-Grass-Wallpaper-1920x1200.jpg");
-        background-repeat: unset;
+        background-repeat: repeat;
         background-position: left top;
         background-attachment: fixed;
     }
@@ -34,38 +34,19 @@
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center">
-    <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
-    <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
-    <a class="btn btn-success" href="../schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-warning" href="../../index.php">Trở về</a>
+    <a class="btn btn-success" href="addStudent.php">Thêm học sinh</a>
+    <a class="btn btn-success" href="subjects.php">Xem điểm</a>
+    <a class="btn btn-success" href="schedule.php">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="index.php?page=add">Đặt lời nhắc cho lớp</a>
     <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
     <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
-    <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
+    <a class="btn btn-danger" href="http://localhost/CaseStudy-School/src/view/users/login.php">Đăng xuất</a>
 </div>
 <br>
-<table align="center" class="table" style="width: auto;border-radius: 15px">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">STT</th>
-        <th scope="col">Họ và tên</th>
-        <th scope="col">Môn học</th>
-        <th scope="col">Điểm</th>
-        <th colspan="2" scope="col">Tùy chọn</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($subject as $key=>$score): ?>
-        <tr>
-            <td align="center"><?php echo ++$key; ?></td>
-            <td><?php echo $score->getStudentName(); ?></td>
-            <td><?php echo $score->getSubjectName(); ?></td>
-            <td align="center"><?php echo $score->getScore(); ?></td>
-            <td><button class="btn btn-info"><a href="index.php?page=updateScore&id=<?php echo $score->getId(); ?>">Cập nhật</a></button></td>
-        </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table>
-
+<div align="center">
+    <input style="width: 500px; height: 300px" type="text">
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

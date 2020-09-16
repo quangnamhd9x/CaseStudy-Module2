@@ -19,8 +19,10 @@ session_start();
         background-attachment: fixed;
     }
     .table {
-        background-color: black;
+        background-color: white;
         color: white;
+        margin-left: 35%;
+        margin-top: 15%;
     }
     a {
         color: white;
@@ -34,11 +36,9 @@ session_start();
         font-size: 50px;
         text-align: center;
     }
+
 </style>
 <body>
-<h1><button style="font-size: 50px; width: 900px" class="btn btn-info">Trường THPT Tài Năng - Lớp 11A2</button></h1>
-<br><br><br><br>
-<br><br><br>
 
 <form method="POST" action="checkLogin.php" >
     <table align="center" class="table" style="width: auto; border-radius: 20px">

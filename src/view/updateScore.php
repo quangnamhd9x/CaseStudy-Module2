@@ -15,8 +15,8 @@
         background-position: left top;
         background-attachment: fixed;
     }
-    table {
-        background-image: url("https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-sang-2.jpg");
+    .table {
+        background-color: white;
     }
     a {
         color: white;
@@ -33,39 +33,40 @@
 </style>
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
-<div align="center">
-    <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
-    <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
-    <a class="btn btn-success" href="../schedule.php">Xem thời khóa biểu</a>
-    <a class="btn btn-success" href="index.php?page=add">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
-    <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
+<div>
+    <a style="font-size: 20px; margin-left: 20px" class="btn btn-warning" href="http://localhost/CaseStudy-School/src/view/subjects.php">Trở về</a>
 </div>
 <br>
-<table align="center" class="table" style="width: auto;border-radius: 15px">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">STT</th>
-        <th scope="col">Họ và tên</th>
-        <th scope="col">Môn học</th>
-        <th scope="col">Điểm</th>
-        <th colspan="2" scope="col">Tùy chọn</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($subject as $key=>$score): ?>
+<br>
+<br>
+<form method="POST" enctype="multipart/form-data">
+    <table align="center" class="table" style="width: auto; border-radius: 15px">
+        <thead class="thead-dark">
         <tr>
-            <td align="center"><?php echo ++$key; ?></td>
-            <td><?php echo $score->getStudentName(); ?></td>
-            <td><?php echo $score->getSubjectName(); ?></td>
-            <td align="center"><?php echo $score->getScore(); ?></td>
-            <td><button class="btn btn-info"><a href="index.php?page=updateScore&id=<?php echo $score->getId(); ?>">Cập nhật</a></button></td>
+            <td>stt: </td>
+            <td style="width: 280px" name="id" type="text" ><?php echo $scores["id"]; ?></td>
         </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table>
-
+        <tr>
+            <td>name: </td>
+            <td style="width: 280px" name="student_id" type="text" ><?php echo $scores["student_id"]; ?></td>
+        </tr>
+        <tr>
+            <td>mon: </td>
+            <td style="width: 280px" name="subject_id" type="text" ><?php echo $scores["subject_id"]; ?></td>
+        </tr>
+        <tr>
+            <td>Điểm: </td>
+            <td><input style="width: 280px" name="score" type="text" required value="<?php echo $scores["score"]; ?>"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button style="width: 200px" class="btn btn-success" type="submit">Update</button>
+            </td>
+        </tr>
+        </thead>
+    </table>
+</form>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
