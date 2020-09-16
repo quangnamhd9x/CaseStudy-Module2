@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,13 +13,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     body {
-        background-image: url("../image/background1.jpeg");
+        background-image: url("../../uploads/background1.jpeg");
         background-repeat: repeat;
         background-position: left top;
         background-attachment: fixed;
     }
-    table {
-        background-image: url("../image/login.jpg");
+    .table {
+        background-color: black;
         color: white;
     }
     a {
@@ -37,7 +40,7 @@
 <br><br><br><br>
 <br><br><br>
 
-<form method="POST" action="../../action/login.php" >
+<form method="POST" action="checkLogin.php" >
     <table align="center" class="table" style="width: auto; border-radius: 20px">
         <thead class="thead-dark">
         <tr>
@@ -48,7 +51,7 @@
         </tr>
         <tr>
             <td><b><button type="button" style="background-color: black; color: white" class="btn btn-secondary">Tài Khoản:</b></td>
-            <td><input style="width: 280px; height: 40px" name="name" type="text" required></td>
+            <td><input style="width: 280px; height: 40px" name="username" type="text" required></td>
         </tr>
         <tr>
             <td><b><button type="button" style="background-color: black; color: white" class="btn btn-secondary">Mật Khẩu:</b></td>
@@ -56,7 +59,7 @@
         <tr>
             <td></td>
             <td>
-                <button style="width: 200px" class="btn btn-success" type="submit">Đăng nhập</button>
+                <button style="width: 200px" class="btn btn-success" value="Login" name="login" type="submit">Đăng nhập</button>
             </td>
         </tr>
         </thead>

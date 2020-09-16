@@ -10,13 +10,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     body {
-        background-image: url("https://4.bp.blogspot.com/-jS6USuucUYI/WwcAIvObhNI/AAAAAAAAFSA/kW_M7o_vinUgNwjsJ7M3o1l7hnqtUNXzwCLcBGAs/s1600/quang%2Bsang%2B%25281%2529.jpg");
+        background-image: url("https://www.setaswall.com/wp-content/uploads/2017/03/Blue-Sky-And-Green-Grass-Wallpaper-1920x1200.jpg");
         background-repeat: unset;
         background-position: left top;
         background-attachment: fixed;
     }
     table {
-        background-image: url("https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-sang-1.jpg");
+        background-image: url("https://www.xmple.com/wallpaper/yellow-gradient-blue-linear-1920x1080-c2-ffffe0-87ceeb-a-240-f-14.svg");
     }
     a {
         color: white;

@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     body {
-        background-image: url("https://aphoto.vn/wp-content/uploads/2018/04/typo-anh-ky-yeu-dep-8.jpg");
+        background-image: url("https://www.setaswall.com/wp-content/uploads/2017/03/Blue-Sky-And-Green-Grass-Wallpaper-1920x1200.jpg");
         background-repeat: unset;
         background-position: left top;
         background-attachment: fixed;
@@ -38,20 +38,21 @@
 <br>
 <table style="border-radius: 15px" align="center" cellpadding="15px">
     <tr>
-        <td><button style="font-size: 50px; width: 300px; background-color: darkorange" class="btn btn-success"><a href="subjects/subjects.html">Toán học</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: cornflowerblue" class="btn btn-success"><a href="subjects/subjects.html">Vật lý</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: rebeccapurple" class="btn btn-success"><a href="subjects/subjects.html">Hóa Học</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: darkorange" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=1">Toán học</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: cornflowerblue" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=2">Vật lý</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: rebeccapurple" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=3">Hóa Học</a></button></td>
     </tr>
     <tr>
-        <td><button style="font-size: 50px; width: 300px" class="btn btn-success"><a href="subjects/subjects.html">Sinh học</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: darkslategray" class="btn btn-success"><a href="subjects/subjects.html">Tin học</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: deepskyblue" class="btn btn-success"><a href="subjects/subjects.html">Tiếng Anh</a></button></td>
+        <td><button style="font-size: 50px; width: 300px" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=4">Sinh học</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: darkslategray" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=5">Tin học</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: deepskyblue" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=6">Tiếng Anh</a></button></td>
     </tr>
     <tr>
-        <td><button style="font-size: 50px; width: 300px; background-color: rosybrown" class="btn btn-success"><a href="subjects/subjects.html">Ngữ văn</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: brown" class="btn btn-success"><a href="subjects/subjects.html">Lịch sử</a></button></td>
-        <td><button style="font-size: 50px; width: 300px; background-color: dodgerblue" class="btn btn-success"><a href="subjects/subjects.html">Giáo dục</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: rosybrown" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=7">Ngữ văn</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: brown" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=8">Lịch sử</a></button></td>
+        <td><button style="font-size: 50px; width: 300px; background-color: dodgerblue" class="btn btn-success"><a href="../../index.php?page=viewSubject&id=9">Giáo dục</a></button></td>
     </tr>
+    <tr align="center"><td colspan="3"><button style="font-size: 50px; width: 600px; background-color: dodgerblue" class="btn btn-success"><a href="../../index.php?page=viewAllScore">Xem toàn bộ</a></button></td></tr>
 </table>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

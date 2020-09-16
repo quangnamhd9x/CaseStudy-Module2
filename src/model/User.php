@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\model;
+namespace Lib\Model;
 
 
 class User
@@ -9,10 +9,10 @@ class User
     protected $username;
     protected $password;
 
-    public function __construct($username, $password)
+    public function __construct($username,$password)
     {
-        $this->username = $username;
-        $this->password = $password;
+        $this->username=$username;
+        $this->password=$password;
     }
 
     /**
@@ -46,5 +46,6 @@ class User
     {
         $this->password = $password;
     }
+
 
 }

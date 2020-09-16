@@ -1,7 +1,13 @@
 <?php
+session_start();
 require __DIR__ . "/vendor/autoload.php";
-include "src/middleware/auth.php";
+$auth = new \app\mid\Auth();
+$auth->isLogin();
+
 $studentController = new \app\controller\StudentController();
+$userController = new \app\controller\UserController();
+$scoreController = new \app\controller\ScoreController();
+
 $page = isset($_REQUEST["page"]) ? $_REQUEST["page"] : NULL;
 
 switch ($page) {
@@ -16,6 +22,15 @@ switch ($page) {
         break;
     case "update":
         $studentController->updateStudent();
+        break;
+    case "logOut":
+        $userController->logOut();
+        break;
+    case "viewAllScore":
+        $scoreController->displayAll();
+        break;
+    case "viewSubject":
+        $scoreController->displaySubject();
         break;
     default:
         $studentController->displayAllStudent();

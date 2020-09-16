@@ -10,17 +10,16 @@ class UserManager
 
     public function __construct()
     {
-        $database = new DBconnect();
-        $this->databaseUser = $database->connectDB();
+        $db = new DBconnect();
+        $this->databaseUser= $db->connectDB();
     }
 
-    function getUser($username, $password)
-    {
+    function getUser($username,$password){
         $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
-        $stmt = $this->databaseUser->prepare($sql);
-        $stmt->bindParam(':username', $username);
-        $stmt->bindParam(':password', $password);
-        $stmt->execute();
-        return $stmt->fetch();
+        $statement = $this->databaseUser->prepare($sql);
+        $statement->bindParam(':username',$username);
+        $statement->bindParam(':password',$password);
+        $statement->execute();
+        return $statement->fetch();
     }
 }

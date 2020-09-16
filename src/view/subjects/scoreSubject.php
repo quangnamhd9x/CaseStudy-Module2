@@ -1,6 +1,3 @@
-<?php
-include_once "src/controller/UserController.php";
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -37,12 +34,12 @@ include_once "src/controller/UserController.php";
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center"><button class="btn btn-success"><a href="index.php?page=add">Thêm học sinh</a></button>
-<button class="btn btn-success"><a href="src/view/subjects.php">Xem điểm</a></button>
-<button class="btn btn-success"><a href="src/view/schedule.php">Xem thời khóa biểu</a></button>
-<button class="btn btn-success"><a href="index.php?page=add">Đặt lời nhắc cho lớp</a></button>
-<button class="btn btn-success"><a href="index.php?page=add">Top thi đua trong lớp</a></button>
-<button class="btn btn-success"><a href="index.php?page=add">Học sinh lưu tâm</a></button>
-<a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
+    <button class="btn btn-success"><a href="src/view/subjects.php">Xem điểm</a></button>
+    <button class="btn btn-success"><a href="src/view/tkb.php">Xem thời khóa biểu</a></button>
+    <button class="btn btn-success"><a href="index.php?page=add">Đặt lời nhắc cho lớp</a></button>
+    <button class="btn btn-success"><a href="index.php?page=add">Top thi đua trong lớp</a></button>
+    <button class="btn btn-success"><a href="index.php?page=add">Học sinh lưu tâm</a></button>
+    <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
 <table align="center" class="table" style="width: auto;border-radius: 15px">
@@ -50,24 +47,20 @@ include_once "src/controller/UserController.php";
     <tr>
         <th scope="col">STT</th>
         <th scope="col">Họ và tên</th>
-        <th scope="col">Giới tính</th>
-        <th scope="col">Ngày sinh</th>
-        <th scope="col">Địa chỉ</th>
-        <th scope="col">Ảnh</th>
-        <th colspan="2" scope="col">Tùy chọn</th>
+        <th scope="col">Môn học</th>
+        <th scope="col">Điểm</th>
+        <!--        <th colspan="2" scope="col">Tùy chọn</th>-->
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($students as $key=>$student): ?>
+    <?php foreach ($subject as $key=>$score): ?>
         <tr>
-            <td><?php echo ++$key; ?></td>
-            <td><?php echo $student->getName(); ?></td>
-            <td><?php echo $student->getGender(); ?></td>
-            <td><?php echo $student->getBirthday(); ?></td>
-            <td><?php echo $student->getAddress(); ?></td>
-            <td><img style="width: 100px" src="<?php echo $student->getImage(); ?>"></td>
-            <td><button class="btn btn-info"><a href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập nhật</a> </button></td>
-            <td><button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=<?php echo $student->getId(); ?>">Xóa</a> </button></td>
+            <td align="center"><?php echo ++$key; ?></td>
+            <td><?php echo $score->getStudentName(); ?></td>
+            <td><?php echo $score->getSubjectName(); ?></td>
+            <td align="center"><?php echo $score->getScore(); ?></td>
+            <!--            <td><button class="btn btn-info"><a href="index.php?page=update&id=--><?php //echo $student->getId(); ?><!--">Cập nhật</a> </button></td>-->
+            <!--            <td><button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=--><?php //echo $student->getId(); ?><!--">Xóa</a> </button></td>-->
         </tr>
     <?php endforeach; ?>
     </tbody>
