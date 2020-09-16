@@ -52,9 +52,16 @@ class StudentModel
 
     public function deleteStudent($id)
     {
+        $this->deleteScoreStudent($id);
         $sql = "DELETE FROM students WHERE id = :id";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":id", $id);
+        $stmt->execute();
+    }
+    public function deleteScoreStudent($studentId){
+        $sql = "DELETE FROM scores WHERE student_id = :id";
+        $stmt = $this->database->prepare($sql);
+        $stmt->bindParam(":id", $studentId);
         $stmt->execute();
     }
 

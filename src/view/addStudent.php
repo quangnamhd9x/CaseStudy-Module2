@@ -35,9 +35,6 @@
         font-size: 50px;
         text-align: center;
     }
-    input {
-        font-style: italic;
-    }
 </style>
 <body>
 <h1>
@@ -66,6 +63,13 @@
         <tr>
             <td>Giới tính:</td>
             <td><input style="width: 280px" placeholder="vd: Nữ" name="gender" type="text" required></td>
+<!--          <td>-->
+<!--            <select name="gender">-->
+<!--                <option name="gender" value="Nữ">Nữ</option>-->
+<!--                <option name="gender" value="Nam">Nam</option>-->
+<!--                <option name="gender" value="Đồng tính">Đồng tính</option>-->
+<!--            </select>-->
+<!--          </td>-->
         </tr>
         <tr>
             <td>Ngày Sinh:</td>

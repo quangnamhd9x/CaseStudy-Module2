@@ -20,16 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/uploads/117716610_592214151684701_6709062928591138760_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/119237114_310466300252749_7865885064573637790_o.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/StudentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/StudentModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/addStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/fail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/fail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/listStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/listStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/note.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/note.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/rank.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/subjects.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/subjects/score.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects/score.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/subjects/scoreSubject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects/scoreSubject.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +117,7 @@
       <workItem from="1600176629855" duration="8521000" />
       <workItem from="1600217767837" duration="15230000" />
       <workItem from="1600242431456" duration="15305000" />
-      <workItem from="1600265719617" duration="12290000" />
+      <workItem from="1600265719617" duration="13846000" />
     </task>
     <servers />
   </component>
