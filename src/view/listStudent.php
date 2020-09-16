@@ -48,8 +48,8 @@ include_once "src/controller/UserController.php";
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="src/view/schedule.php">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=add">Học sinh lưu tâm</a>
+    <a class="btn btn-success" href="index.php?page=viewRank">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="index.php?page=viewFail">Học sinh lưu tâm</a>
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>

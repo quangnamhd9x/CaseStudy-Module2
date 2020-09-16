@@ -75,5 +75,40 @@ WHERE id = :id";
             $stmt->execute();
         }
     }
-
+    public function getRank(){
+        $sql = "SELECT scores.id, students.name, subjects.subject_name, scores.score
+FROM students
+INNER JOIN scores
+ON students.id = scores.student_id
+INNER JOIN subjects
+ON scores.subject_id = subjects.id 
+ORDER BY `scores`.`score` DESC LIMIT 10";
+        $stmt = $this->database->query($sql);
+        $result = $stmt->fetchAll();
+        $array = [];
+        foreach ($result as $items) {
+            $score = new Score($items["name"], $items["subject_name"], $items["score"]);
+            $score->setId($items["id"]);
+            array_push($array, $score);
+        }
+        return $array;
+    }
+    public function getFail(){
+        $sql = "SELECT scores.id, students.name, subjects.subject_name, scores.score
+FROM students
+INNER JOIN scores
+ON students.id = scores.student_id
+INNER JOIN subjects
+ON scores.subject_id = subjects.id 
+ORDER BY `scores`.`score` ASC LIMIT 10";
+        $stmt = $this->database->query($sql);
+        $result = $stmt->fetchAll();
+        $array = [];
+        foreach ($result as $items) {
+            $score = new Score($items["name"], $items["subject_name"], $items["score"]);
+            $score->setId($items["id"]);
+            array_push($array, $score);
+        }
+        return $array;
+    }
 }

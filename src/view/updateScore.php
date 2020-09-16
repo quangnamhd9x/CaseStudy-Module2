@@ -42,18 +42,18 @@
 <form method="POST" enctype="multipart/form-data">
     <table align="center" class="table" style="width: auto; border-radius: 15px">
         <thead class="thead-dark">
-        <tr>
-            <td>stt: </td>
-            <td style="width: 280px" name="id" type="text" ><?php echo $scores["id"]; ?></td>
-        </tr>
-        <tr>
-            <td>name: </td>
-            <td style="width: 280px" name="student_id" type="text" ><?php echo $scores["student_id"]; ?></td>
-        </tr>
-        <tr>
-            <td>mon: </td>
-            <td style="width: 280px" name="subject_id" type="text" ><?php echo $scores["subject_id"]; ?></td>
-        </tr>
+<!--        <tr>-->
+<!--            <td>stt: </td>-->
+<!--            <td style="width: 280px" name="id" type="text" >--><?php //echo $scores["id"]; ?><!--</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>name: </td>-->
+<!--            <td style="width: 280px" name="student_id" type="text" >--><?php //echo $scores["student_id"]; ?><!--</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>mon: </td>-->
+<!--            <td style="width: 280px" name="subject_id" type="text" >--><?php //echo $scores["subject_id"]; ?><!--</td>-->
+<!--        </tr>-->
         <tr>
             <td>Điểm: </td>
             <td><input style="width: 280px" name="score" type="text" required value="<?php echo $scores["score"]; ?>"></td>

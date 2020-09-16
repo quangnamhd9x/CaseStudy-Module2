@@ -47,4 +47,12 @@ class ScoreController
             header('location:src/view/subjects.php');
         }
     }
+    public function displayRank(){
+        $scores = $this->scoreController->getRank();
+        include_once "src/view/rank.php";
+    }
+    public function displayFail(){
+        $scores = $this->scoreController->getFail();
+        include_once "src/view/fail.php";
+    }
 }

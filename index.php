@@ -35,6 +35,12 @@ switch ($page) {
     case "updateScore":
         $scoreController->updateScore();
         break;
+    case "viewRank":
+        $scoreController->displayRank();
+        break;
+    case "viewFail":
+        $scoreController->displayFail();
+        break;
     default:
         $studentController->displayAllStudent();
 }

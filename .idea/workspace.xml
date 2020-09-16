@@ -20,22 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/image/backgroundlogin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/backgroundlogin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/note.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/updateScore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/fail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/rank.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ScoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ScoreController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/ScoreManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ScoreManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/addStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addStudent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/listStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/listStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/subjects.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/subjects/scoreSubject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects/scoreSubject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/users/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/users/loginFail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/users/loginFail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/users/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/updateScore.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/updateScore.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +120,7 @@
       <workItem from="1600176629855" duration="8521000" />
       <workItem from="1600217767837" duration="15230000" />
       <workItem from="1600242431456" duration="15305000" />
-      <workItem from="1600265719617" duration="8913000" />
+      <workItem from="1600265719617" duration="10681000" />
     </task>
     <servers />
   </component>
@@ -177,11 +169,11 @@
     </state>
     <state x="425" y="99" width="505" height="568" key="NewPhpClassDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884399589" />
     <state x="581" y="118" width="545" height="598" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1600229803000" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1600274042131">
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1600274836731">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="478" y="305" width="399" height="156" key="NewPhpFileDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884373986" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1600274042131" />
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1600274836731" />
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1599886244398">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
