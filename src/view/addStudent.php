@@ -46,7 +46,7 @@
 <div align="center">
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/addStudent.php">Thêm học sinh</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/subjects.php">Xem điểm</a>
-    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=showSchedule">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>

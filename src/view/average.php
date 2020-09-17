@@ -36,7 +36,7 @@ include_once "../../../src/controller/ScoreController.php";
 </style>
 <body>
 <div>
-    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="../../index.php">Trở về</a>
+    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="http://localhost/CaseStudy-School/src/view/subjects.php">Trở về</a>
 </div>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center">

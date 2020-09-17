@@ -40,6 +40,9 @@ include_once "src/controller/UserController.php";
     }
 </style>
 <body>
+<div>
+    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="http://localhost/CaseStudy-School/index.php">Trở về</a>
+</div>
 <h1>
     <button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button>
 </h1>
@@ -49,8 +52,8 @@ include_once "src/controller/UserController.php";
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=showSchedule">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=viewRank">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=viewFail">Học sinh lưu tâm</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
     <form style="display: inline; width: 100px; height: 50px" class="form-inline my-2 my-lg-0" method="post"
           action="index.php?page=showInfo">
         <input name="search" class="form-control" type="search" placeholder="Tìm kiếm học sinh"
