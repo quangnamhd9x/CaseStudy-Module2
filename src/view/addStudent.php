@@ -74,7 +74,7 @@
             <select name="gender">
                 <option value="Nữ">Nữ</option>
                 <option value="Nam">Nam</option>
-                <option value="Đồng tính">Đồng tính</option>
+                <option value="Đồng tính">Khác</option>
             </select>
           </td>
         </tr>
