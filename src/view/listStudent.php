@@ -80,7 +80,7 @@ include_once "src/controller/UserController.php";
             <td><?php echo $student->getGender(); ?></td>
             <td><?php echo $student->getBirthday(); ?></td>
             <td><?php echo $student->getAddress(); ?></td>
-            <td><img style="width: 100px" src="<?php echo $student->getImage(); ?>"></td>
+            <td><img style="width: 100px; height: 100px" src="<?php echo $student->getImage(); ?>"></td>
             <td>
                 <a class="btn btn-info" href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập
                         nhật</a>

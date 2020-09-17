@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/view/addStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/average.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/average.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/note.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/note.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/rank.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/schedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/listStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/listStudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,7 @@
       <workItem from="1600217767837" duration="15230000" />
       <workItem from="1600242431456" duration="15305000" />
       <workItem from="1600265719617" duration="14289000" />
-      <workItem from="1600304090535" duration="20407000" />
+      <workItem from="1600304090535" duration="20819000" />
     </task>
     <servers />
   </component>
