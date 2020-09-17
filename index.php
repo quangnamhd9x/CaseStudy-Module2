@@ -44,6 +44,9 @@ switch ($page) {
     case "viewAverage":
         $scoreController->displayAverage();
         break;
+    case "showInfo":
+        $scoreController->search();
+        break;
     default:
         $studentController->displayAllStudent();
 }

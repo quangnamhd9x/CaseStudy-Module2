@@ -32,9 +32,25 @@
     }
 </style>
 <body>
+<div>
+    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="../../index.php">Trở về</a>
+</div>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div>
-    <a style="font-size: 20px; margin-left: 20px" class="btn btn-warning" href="http://localhost/CaseStudy-School/src/view/subjects.php">Trở về</a>
+    <a class="btn btn-success" href="addStudent.php">Thêm học sinh</a>
+    <a class="btn btn-success" href="subjects.php">Xem điểm</a>
+    <a class="btn btn-success" href="schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong
+        lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
+    <form style="display: inline; width: 100px; height: 50px" class="form-inline my-2 my-lg-0" method="post"
+          action="index.php?page=showInfo">
+        <input name="search" class="form-control" type="search" placeholder="Tìm kiếm học sinh"
+               aria-label="Search">
+        <button style="background-color: lightskyblue" class="btn btn-success" type="submit">Search</button>
+    </form>
+    <a class="btn btn-danger" href="http://localhost/CaseStudy-School/src/view/users/login.php">Đăng xuất</a>
 </div>
 <br>
 <br>
@@ -42,18 +58,6 @@
 <form method="POST" enctype="multipart/form-data">
     <table align="center" class="table" style="width: auto; border-radius: 15px">
         <thead class="thead-dark">
-<!--        <tr>-->
-<!--            <td>stt: </td>-->
-<!--            <td style="width: 280px" name="id" type="text" >--><?php //echo $scores["id"]; ?><!--</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>name: </td>-->
-<!--            <td style="width: 280px" name="student_id" type="text" >--><?php //echo $scores["student_id"]; ?><!--</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td>mon: </td>-->
-<!--            <td style="width: 280px" name="subject_id" type="text" >--><?php //echo $scores["subject_id"]; ?><!--</td>-->
-<!--        </tr>-->
         <tr>
             <td>Điểm: </td>
             <td><input style="width: 280px" name="score" type="text" required value="<?php echo $scores["score"]; ?>"></td>

@@ -33,6 +33,7 @@ WHERE subjects.id = :id";
         }
         return $array;
     }
+
     public function getScoreById($id)
     {
         $sql = "SELECT * FROM scores WHERE id = :id";
@@ -75,7 +76,9 @@ WHERE id = :id";
             $stmt->execute();
         }
     }
-    public function getRank(){
+
+    public function getRank()
+    {
         $sql = "SELECT AVG(scores.score), students.name
 FROM scores
 INNER JOIN students
@@ -92,7 +95,9 @@ ORDER BY AVG(scores.score) DESC LIMIT 10";
         }
         return $array;
     }
-    public function getFail(){
+
+    public function getFail()
+    {
         $sql = "SELECT AVG(scores.score), students.name
 FROM scores
 INNER JOIN students
@@ -109,7 +114,9 @@ ORDER BY AVG(scores.score) ASC LIMIT 10";
         }
         return $array;
     }
-    public function getAvg(){
+
+    public function getAvg()
+    {
         $sql = "SELECT AVG(scores.score), students.name
 FROM scores
 INNER JOIN students
@@ -124,5 +131,27 @@ GROUP BY students.name";
             array_push($array, $score);
         }
         return $array;
+    }
+
+    public function search($key)
+    {
+        $sql = "SELECT scores.id, students.name, subjects.subject_name, scores.score
+FROM students
+INNER JOIN scores
+ON students.id = scores.student_id
+INNER JOIN subjects
+ON scores.subject_id = subjects.id
+WHERE students.name LIKE :key";
+        $stmt = $this->database->prepare($sql);
+        $stmt->bindParam(":key", $key);
+        $stmt->execute();
+        $data = $stmt->fetchAll();
+        $arr = [];
+        foreach ($data as $item) {
+            $info = new Score($item['name'], $item['subject_name'], $item['score']);
+            $info->setId($item['id']);
+            array_push($arr, $info);
+        }
+        return $arr;
     }
 }

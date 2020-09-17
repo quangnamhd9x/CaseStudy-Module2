@@ -59,4 +59,12 @@ class ScoreController
         $scores = $this->scoreController->getAvg();
         include_once "src/view/average.php";
     }
+    public function search()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == "POST"){
+            $search = "%".$_REQUEST['search']."%";
+            $input = $this->scoreController->search($search);
+            include_once "src/view/showInfo.php";
+        }
+    }
 }

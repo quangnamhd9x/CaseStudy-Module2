@@ -1,8 +1,10 @@
 <?php
 
+
 namespace app\model;
 
-class StudentModel
+
+class ScheduleModel
 {
     protected $database;
 
@@ -73,15 +75,13 @@ VALUES (:name, :birthday, :address, :image, :gender)";
                 SET name = :name, 
                 birthday = :birthday,
                 address = :address,
-                image = :image,
-                gender = :gender
+                image = :image
                 WHERE id = :id";
             $stmt = $this->database->prepare($sql);
             $stmt->bindParam(":id", $student->getId());
             $stmt->bindParam(":name", $student->getName());
             $stmt->bindParam(":birthday", $student->getBirthday());
             $stmt->bindParam(":address", $student->getAddress());
-            $stmt->bindParam(":gender", $student->getGender());
             $stmt->bindParam(":image", $student->getImage());
             $stmt->execute();
         }

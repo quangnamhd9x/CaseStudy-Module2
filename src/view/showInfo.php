@@ -1,3 +1,6 @@
+<?php
+include_once "../../src/controller/ScoreController.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +21,7 @@
     }
 
     .table {
-        background-color: white;
+        background-color: white
     }
 
     a {
@@ -37,15 +40,12 @@
     }
 </style>
 <body>
-<div>
-    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="http://localhost/CaseStudy-School/index.php">Trở về</a>
-</div>
 <h1>
     <button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button>
 </h1>
 <div align="center">
-    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/addStudent.php">Thêm học sinh</a>
-    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/subjects.php">Xem điểm</a>
+    <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
+    <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
@@ -59,46 +59,27 @@
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
-<br>
-<br>
-<form method="POST" enctype="multipart/form-data">
-    <table align="center" class="table" style="width: auto; border-radius: 15px">
-        <thead class="thead-dark">
+<table align="center" class="table" style="width: 1000px;border-radius: 15px">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">STT</th>
+        <th scope="col">Họ và tên</th>
+        <th scope="col">Môn</th>
+        <th scope="col">Điểm</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($input as $key => $scores): ?>
         <tr>
-            <td>Họ tên:</td>
-            <td><input placeholder="vd: Nguyễn Chi Pu" style="width: 280px" name="name" type="text" required></td>
+            <td align="center"><?php echo ++$key; ?></td>
+            <td><?php echo $scores->getStudentName(); ?></td>
+            <td><?php echo $scores->getSubjectName(); ?></td>
+            <td align="center"><?php echo $scores->getScore(); ?></td>
         </tr>
-        <tr>
-            <td>Giới tính:</td>
-          <td>
-            <select name="gender">
-                <option value="Nữ">Nữ</option>
-                <option value="Nam">Nam</option>
-                <option value="Đồng tính">Đồng tính</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-            <td>Ngày Sinh:</td>
-            <td><input style="width: 280px" name="birthday" type="date" required></td>
-        </tr>
-        <tr>
-            <td>Địa chỉ:</td>
-            <td><input style="width: 280px" placeholder="vd: Hoài Đức - Hà Nội" name="address" type="text" required></td>
-        </tr>
-        <tr>
-            <td>Ảnh:</td>
-            <td><input name="image" type="file"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <button style="width: 200px" class="btn btn-success" type="submit">ADD</button>
-            </td>
-        </tr>
-        </thead>
-    </table>
-</form>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

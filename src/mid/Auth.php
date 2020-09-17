@@ -3,9 +3,8 @@ namespace app\mid;
 
 class Auth
 {
-
     function isLogin(){
-        if (!isset($_SESSION['isLogin'])|| !$_SESSION['isLogin'] ){
+        if (!isset($_SESSION['isLogin'])){
             header('location:src/view/users/login.php');
         }
     }

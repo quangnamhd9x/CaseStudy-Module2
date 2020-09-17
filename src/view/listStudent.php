@@ -43,6 +43,7 @@ include_once "src/controller/UserController.php";
 <h1>
     <button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button>
 </h1>
+<br>
 <div align="center">
     <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
@@ -50,6 +51,12 @@ include_once "src/controller/UserController.php";
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
     <a class="btn btn-success" href="index.php?page=viewRank">Top thi đua trong lớp</a>
     <a class="btn btn-success" href="index.php?page=viewFail">Học sinh lưu tâm</a>
+    <form style="display: inline; width: 100px; height: 50px" class="form-inline my-2 my-lg-0" method="post"
+          action="index.php?page=showInfo">
+        <input name="search" class="form-control" type="search" placeholder="Tìm kiếm học sinh"
+               aria-label="Search">
+        <button style="background-color: lightskyblue" class="btn btn-success" type="submit">Search</button>
+    </form>
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>

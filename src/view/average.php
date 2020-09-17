@@ -35,15 +35,23 @@ include_once "../../../src/controller/ScoreController.php";
     }
 </style>
 <body>
+<div>
+    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="../../index.php">Trở về</a>
+</div>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center">
-    <a class="btn btn-warning" href="http://localhost/CaseStudy-School/src/view/subjects.php">Trở về</a>
     <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
+    <form style="display: inline; width: 100px; height: 50px" class="form-inline my-2 my-lg-0" method="post"
+          action="index.php?page=showInfo">
+        <input name="search" class="form-control" type="search" placeholder="Tìm kiếm học sinh"
+               aria-label="Search">
+        <button style="background-color: lightskyblue" class="btn btn-success" type="submit">Search</button>
+    </form>
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
