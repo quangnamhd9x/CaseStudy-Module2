@@ -82,13 +82,12 @@ include_once "src/controller/UserController.php";
             <td><?php echo $student->getAddress(); ?></td>
             <td><img style="width: 100px" src="<?php echo $student->getImage(); ?>"></td>
             <td>
-                <button class="btn btn-info"><a href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập
-                        nhật</a></button>
+                <a class="btn btn-info" href="index.php?page=update&id=<?php echo $student->getId(); ?>">Cập
+                        nhật</a>
             </td>
             <td>
-                <button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')"
+                <a class="btn btn-danger" onclick="return confirm('Bạn chắc chứ?')"
                                                   href="index.php?page=delete&id=<?php echo $student->getId(); ?>">Xóa</a>
-                </button>
             </td>
         </tr>
     <?php endforeach; ?>

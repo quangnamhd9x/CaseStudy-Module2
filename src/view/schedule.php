@@ -83,7 +83,6 @@ include_once "src/controller/UserController.php";
 <!--                <button class="btn btn-info"><a href="index.php?page=addSchedule&id=--><?php //echo $info->getId(); ?><!--">Sửa</a></button>-->
                 <a class="btn btn-danger" onclick="return confirm('Bạn chắc chứ?')"
                                                   href="index.php?page=deleteSchedule&id=<?php echo $info->getId(); ?>">Xóa</a>
-                </a>
             </td>
         </tr>
     <?php endforeach; ?>
