@@ -8,6 +8,28 @@ class Schedule
 {
     protected $id;
     protected $image;
+    protected $note;
+
+    public function __construct($note)
+    {
+        $this->note = $note;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    /**
+     * @param mixed $note
+     */
+    public function setNote($note)
+    {
+        $this->note = $note;
+    }
 
     /**
      * @return mixed

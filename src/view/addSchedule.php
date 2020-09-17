@@ -1,6 +1,3 @@
-<?php
-include_once "src/controller/UserController.php";
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,7 +18,7 @@ include_once "src/controller/UserController.php";
     }
 
     .table {
-        background-color: white
+        background-color: white;
     }
 
     a {
@@ -40,17 +37,19 @@ include_once "src/controller/UserController.php";
     }
 </style>
 <body>
+<div>
+    <a style="margin-top: 10px; margin-left: 10px; font-size: 18px" class="btn btn-warning" href="http://localhost/CaseStudy-School/index.php">Trở về</a>
+</div>
 <h1>
     <button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button>
 </h1>
-<br>
 <div align="center">
-    <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
-    <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
-    <a class="btn btn-success" href="src/view/schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/addStudent.php">Thêm học sinh</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/subjects.php">Xem điểm</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
-    <a class="btn btn-success" href="index.php?page=viewRank">Top thi đua trong lớp</a>
-    <a class="btn btn-success" href="index.php?page=viewFail">Học sinh lưu tâm</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewRank">Top thi đua trong lớp</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=viewFail">Học sinh lưu tâm</a>
     <form style="display: inline; width: 100px; height: 50px" class="form-inline my-2 my-lg-0" method="post"
           action="index.php?page=showInfo">
         <input name="search" class="form-control" type="search" placeholder="Tìm kiếm học sinh"
@@ -60,33 +59,28 @@ include_once "src/controller/UserController.php";
     <a class="btn btn-danger" href="index.php?page=logOut">Đăng xuất</a>
 </div>
 <br>
-<table align="center" class="table" style="width: 1300px;border-radius: 15px">
-    <thead class="thead-dark">
-    <tr>
-        <th style="width: 30px" scope="col">STT</th>
-        <th scope="col">Thời khóa biểu</th>
-        <th style="width: 100px" scope="col">Ghi chú</th>
-        <th scope="col" style="width: 250px">Tùy chọn</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($schedules as $key => $info): ?>
+<br>
+<br>
+<form method="POST" enctype="multipart/form-data">
+    <table align="center" class="table" style="width: auto; border-radius: 15px">
+        <thead class="thead-dark">
         <tr>
-            <td><?php echo ++$key; ?></td>
-            <td><img style="width: 900px" src="<?php echo $info->getImage(); ?>"></td>
-            <td><?php echo $info->getNote(); ?></td>
+            <td>Ảnh:</td>
+            <td><input name="image" type="file"></td>
+        </tr>
+        <tr>
+            <td>Ghi chú:</td>
+            <td><input style="width: 280px" name="note" type="text" required></td>
+        </tr>
+        <tr>
+            <td></td>
             <td>
-                <button class="btn btn-info"><a href="index.php?page=addSchedule&id=<?php echo $info->getId(); ?>">Thêm</a></button>
-                <button class="btn btn-info"><a href="index.php?page=addSchedule&id=<?php echo $info->getId(); ?>">Sửa</a></button>
-                <button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')"
-                                                  href="index.php?page=deleteSchedule&id=<?php echo $info->getId(); ?>">Xóa</a>
-                </button>
+                <button style="width: 200px" class="btn btn-success" type="submit">ADD</button>
             </td>
         </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table>
-
+        </thead>
+    </table>
+</form>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

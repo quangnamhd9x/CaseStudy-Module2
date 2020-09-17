@@ -14,38 +14,34 @@ class ScheduleModel
         $this->database = $db->connectDB();
     }
 
-    public function getAllStudent()
+    public function getAllSchedule()
     {
-        $sql = "SELECT * FROM students";
+        $sql = "SELECT * FROM schedules";
         $stmt = $this->database->query($sql);
         $result = $stmt->fetchAll();
         $array = [];
         foreach ($result as $items) {
-            $student = new Student($items["name"], $items["birthday"], $items["address"], $items["gender"]);
-            $student->setId($items["id"]);
+            $schedule = new Schedule($items["note"]);
+            $schedule->setId($items["id"]);
             $img = $items["image"] == "src/uploads/" ? "src/uploads/default.jpg" : $items["image"];
-            $student->setImage($img);
-            array_push($array, $student);
+            $schedule->setImage($img);
+            array_push($array, $schedule);
         }
         return $array;
     }
 
-    public function addStudent($student)
+    public function addSchedule($schedule)
     {
-        $sql = "INSERT INTO `students`(`name`, `birthday`, `address`, `image`, `gender`) 
-VALUES (:name, :birthday, :address, :image, :gender)";
+        $sql = "INSERT INTO `schedules`(`image`, `note`) VALUES (:image, :note)";
         $stmt = $this->database->prepare($sql);
-        $stmt->bindParam(":name", $student->getName());
-        $stmt->bindParam(":birthday", $student->getBirthday());
-        $stmt->bindParam(":address", $student->getAddress());
-        $stmt->bindParam(":image", $student->getImage());
-        $stmt->bindParam(":gender", $student->getGender());
+        $stmt->bindParam(":image", $schedule->getImage());
+        $stmt->bindParam(":note", $schedule->getNote());
         $stmt->execute();
     }
 
-    public function getStudentById($id)
+    public function getScheduleById($id)
     {
-        $sql = "SELECT * FROM students WHERE id = :id";
+        $sql = "SELECT * FROM schedules WHERE id = :id";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":id", $id);
         $stmt->execute();
@@ -53,18 +49,11 @@ VALUES (:name, :birthday, :address, :image, :gender)";
         return $data;
     }
 
-    public function deleteStudent($id)
+    public function deleteSchedule($id)
     {
-        $this->deleteScoreStudent($id);
-        $sql = "DELETE FROM students WHERE id = :id";
+        $sql = "DELETE FROM `schedules` WHERE id = :id";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":id", $id);
-        $stmt->execute();
-    }
-    public function deleteScoreStudent($studentId){
-        $sql = "DELETE FROM scores WHERE student_id = :id";
-        $stmt = $this->database->prepare($sql);
-        $stmt->bindParam(":id", $studentId);
         $stmt->execute();
     }
 

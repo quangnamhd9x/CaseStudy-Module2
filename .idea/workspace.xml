@@ -20,28 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Note.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/NoteModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Schedule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ScheduleModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/showInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ScheduleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/Screenshot from 2020-09-13 19-49-49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/addSchedule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/updateSchedule.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ScoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ScoreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mid/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/mid/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ScoreManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ScoreManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/StudentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/StudentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/addStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/average.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/average.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/fail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/fail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Schedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ScheduleModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ScheduleModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/1-238.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/1-238.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/listStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/listStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/note.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/note.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/rank.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/subjects.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/updateScore.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/updateScore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/updateStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/updateStudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +125,7 @@
       <workItem from="1600217767837" duration="15230000" />
       <workItem from="1600242431456" duration="15305000" />
       <workItem from="1600265719617" duration="14289000" />
-      <workItem from="1600304090535" duration="15360000" />
+      <workItem from="1600304090535" duration="19142000" />
     </task>
     <servers />
   </component>
@@ -158,11 +148,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="457" y="92" width="441" height="654" key="#com.intellij.ide.util.MemberChooser" timestamp="1600313097200">
+    <state x="457" y="92" width="441" height="654" key="#com.intellij.ide.util.MemberChooser" timestamp="1600325103163">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="457" y="89" width="441" height="588" key="#com.intellij.ide.util.MemberChooser/0.27.1366.705@0.27.1366.705" timestamp="1599884816096" />
-    <state x="457" y="92" width="441" height="654" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1600313097200" />
+    <state x="457" y="92" width="441" height="654" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1600325103163" />
     <state x="498" y="50" width="351" height="709" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600059278863">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -171,24 +161,24 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1600273390037" />
-    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600253350391">
+    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600324622392">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1600253350391" />
+    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1600324622392" />
     <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600182541562">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1600182541562" />
-    <state x="516" y="116" width="545" height="598" key="NewPhpClassDialog" timestamp="1600313039751">
+    <state x="516" y="116" width="545" height="605" key="NewPhpClassDialog" timestamp="1600324596996">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="425" y="99" width="505" height="568" key="NewPhpClassDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884399589" />
-    <state x="516" y="116" width="545" height="598" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1600313039751" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1600313962094">
+    <state x="516" y="116" width="545" height="605" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1600324596996" />
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1600327696140">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="478" y="305" width="399" height="156" key="NewPhpFileDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884373986" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1600313962094" />
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1600327696140" />
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1599886244398">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

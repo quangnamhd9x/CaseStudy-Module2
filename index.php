@@ -7,6 +7,7 @@ $auth->isLogin();
 $studentController = new \app\controller\StudentController();
 $userController = new \app\controller\UserController();
 $scoreController = new \app\controller\ScoreController();
+$scheduleController = new \app\controller\ScheduleController();
 
 $page = isset($_REQUEST["page"]) ? $_REQUEST["page"] : NULL;
 
@@ -46,6 +47,15 @@ switch ($page) {
         break;
     case "showInfo":
         $scoreController->search();
+        break;
+    case "showSchedule":
+        $scheduleController->displayAllSchedule();
+        break;
+    case "addSchedule":
+        $scheduleController->addSchedule();
+        break;
+    case "deleteSchedule":
+        $scheduleController->deleteSchedule();
         break;
     default:
         $studentController->displayAllStudent();
