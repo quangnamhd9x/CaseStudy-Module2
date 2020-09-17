@@ -20,11 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/uploads/117716610_592214151684701_6709062928591138760_n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/119237114_310466300252749_7865885064573637790_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/1-238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/119059067_309911203641592_5530435722417779319_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/119081437_1026589144835800_5586792305532034843_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/119237114_310466300252749_7865885064573637790_o (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uploads/cgd20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/average.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ScoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ScoreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ScoreManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ScoreManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/StudentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/StudentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/addStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/117716610_592214151684701_6709062928591138760_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/117716610_592214151684701_6709062928591138760_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o (1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/119075960_1564656940372620_7898479672600904093_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/119075960_1564656940372620_7898479672600904093_o.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/119237114_310466300252749_7865885064573637790_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/119237114_310466300252749_7865885064573637790_o.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/1600048775chup-anh-ky-yeu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/1600048775chup-anh-ky-yeu-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/2020-07-14-15-24-17-062_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/2020-07-14-15-24-17-062_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/58842472_1008056589394186_2617387850827563008_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/58842472_1008056589394186_2617387850827563008_o.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/83502009_2582181232056528_5316367779492790272_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/83502009_2582181232056528_5316367779492790272_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/89959709_1591778264306034_6360432315780300800_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/89959709_1591778264306034_6360432315780300800_o.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/FB_IMG_1579385259574.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/FB_IMG_1579385259574.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/Mike-Tyson-van-tham-nhung-nguoi-ban tu-chiu an-chung-than.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/Mike-Tyson-van-tham-nhung-nguoi-ban tu-chiu an-chung-than.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/background1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/background1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/backgroundlogin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/backgroundlogin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/college_students_outdoor-wallpaper-1920x1080.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/college_students_outdoor-wallpaper-1920x1080.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/download.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/download.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/h.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/h.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/ngoc-trinh-2 (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/ngoc-trinh-2 (1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/subjects.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/subjects/score.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects/score.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +143,8 @@
       <workItem from="1600176629855" duration="8521000" />
       <workItem from="1600217767837" duration="15230000" />
       <workItem from="1600242431456" duration="15305000" />
-      <workItem from="1600265719617" duration="13846000" />
+      <workItem from="1600265719617" duration="14289000" />
+      <workItem from="1600304090535" duration="5397000" />
     </task>
     <servers />
   </component>
@@ -166,11 +193,11 @@
     </state>
     <state x="425" y="99" width="505" height="568" key="NewPhpClassDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884399589" />
     <state x="581" y="118" width="545" height="598" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1600229803000" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1600274836731">
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog" timestamp="1600304820456">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="478" y="305" width="399" height="156" key="NewPhpFileDialog/0.27.1366.705@0.27.1366.705" timestamp="1599884373986" />
-    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1600274836731" />
+    <state x="478" y="319" width="399" height="156" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1600304820456" />
     <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1599886244398">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

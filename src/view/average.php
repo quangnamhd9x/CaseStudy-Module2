@@ -1,5 +1,5 @@
 <?php
-include_once "../../src/controller/ScoreController.php";
+include_once "../../../src/controller/ScoreController.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,8 +18,8 @@ include_once "../../src/controller/ScoreController.php";
         background-position: left top;
         background-attachment: fixed;
     }
-    table {
-        background-image: url("https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-sang-2.jpg");
+    .table {
+        background-color: white;
     }
     a {
         color: white;
@@ -37,7 +37,7 @@ include_once "../../src/controller/ScoreController.php";
 <body>
 <h1><button style="font-size: 50px" class="btn btn-info">Lớp 11A2 - Victory</button></h1>
 <div align="center">
-    <a class="btn btn-warning" href="http://localhost/CaseStudy-School/index.php">Trở về</a>
+    <a class="btn btn-warning" href="http://localhost/CaseStudy-School/src/view/subjects.php">Trở về</a>
     <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/schedule.php">Xem thời khóa biểu</a>

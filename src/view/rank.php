@@ -52,7 +52,6 @@ include_once "../../src/controller/ScoreController.php";
     <tr>
         <th scope="col">STT</th>
         <th scope="col">Họ và tên</th>
-        <th scope="col">Môn học</th>
         <th scope="col">Điểm</th>
         <!--        <th colspan="2" scope="col">Tùy chọn</th>-->
     </tr>
@@ -62,7 +61,6 @@ include_once "../../src/controller/ScoreController.php";
         <tr>
             <td align="center"><?php echo ++$key; ?></td>
             <td><?php echo $score->getStudentName(); ?></td>
-            <td><?php echo $score->getSubjectName(); ?></td>
             <td align="center"><?php echo $score->getScore(); ?></td>
             <!--            <td><button class="btn btn-info"><a href="index.php?page=update&id=--><?php //echo $student->getId(); ?><!--">Cập nhật</a> </button></td>-->
             <!--            <td><button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')" href="index.php?page=delete&id=--><?php //echo $student->getId(); ?><!--">Xóa</a> </button></td>-->

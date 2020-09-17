@@ -30,7 +30,8 @@ class StudentModel
 
     public function addStudent($student)
     {
-        $sql = "INSERT INTO `students`(`name`, `birthday`, `address`, `image`, `gender`) VALUES (:name, :birthday, :address, :image, :gender)";
+        $sql = "INSERT INTO `students`(`name`, `birthday`, `address`, `image`, `gender`) 
+VALUES (:name, :birthday, :address, :image, :gender)";
         $stmt = $this->database->prepare($sql);
         $stmt->bindParam(":name", $student->getName());
         $stmt->bindParam(":birthday", $student->getBirthday());

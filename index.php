@@ -41,6 +41,9 @@ switch ($page) {
     case "viewFail":
         $scoreController->displayFail();
         break;
+    case "viewAverage":
+        $scoreController->displayAverage();
+        break;
     default:
         $studentController->displayAllStudent();
 }

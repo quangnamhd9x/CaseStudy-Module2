@@ -74,13 +74,15 @@
                href="../../index.php?page=viewSubject&id=7">Ngữ văn</></a></td>
         <td><a style="font-size: 50px; width: 300px; background-color: brown" class="btn btn-success"
                href="../../index.php?page=viewSubject&id=8">Lịch sử</></a></td>
-        <td><a style="font-size: 50px; width: 300px; background-color: dodgerblue" class="btn btn-success"
+        <td><a style="font-size: 50px; width: 300px; background-color: green" class="btn btn-success"
                href="../../index.php?page=viewSubject&id=9">Giáo dục</></a></td>
     </tr>
     <tr align="center">
         <td colspan="3">
-            <button style="font-size: 50px; width: 600px; background-color: dodgerblue" class="btn btn-success"><a
-                        href="../../index.php?page=viewAllScore">Xem toàn bộ</a></button>
+            <a style="font-size: 50px; width: 400px; background-color: blueviolet" class="btn btn-success"
+                        href="../../index.php?page=viewAllScore">Xem toàn bộ</a>
+            <a style="font-size: 50px; width: 500px; background-color: blueviolet" class="btn btn-success"
+                        href="../../index.php?page=viewAverage">Xem điểm trung bình</a>
         </td>
     </tr>
 </table>

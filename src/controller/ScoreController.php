@@ -55,4 +55,8 @@ class ScoreController
         $scores = $this->scoreController->getFail();
         include_once "src/view/fail.php";
     }
+    public function displayAverage(){
+        $scores = $this->scoreController->getAvg();
+        include_once "src/view/average.php";
+    }
 }

@@ -76,36 +76,50 @@ WHERE id = :id";
         }
     }
     public function getRank(){
-        $sql = "SELECT scores.id, students.name, subjects.subject_name, scores.score
-FROM students
-INNER JOIN scores
+        $sql = "SELECT AVG(scores.score), students.name
+FROM scores
+INNER JOIN students
 ON students.id = scores.student_id
-INNER JOIN subjects
-ON scores.subject_id = subjects.id 
-ORDER BY `scores`.`score` DESC LIMIT 10";
+GROUP BY students.name
+ORDER BY AVG(scores.score) DESC LIMIT 10";
         $stmt = $this->database->query($sql);
         $result = $stmt->fetchAll();
         $array = [];
         foreach ($result as $items) {
-            $score = new Score($items["name"], $items["subject_name"], $items["score"]);
+            $score = new Score($items["name"], $items["subject_name"], $items["AVG(scores.score)"]);
             $score->setId($items["id"]);
             array_push($array, $score);
         }
         return $array;
     }
     public function getFail(){
-        $sql = "SELECT scores.id, students.name, subjects.subject_name, scores.score
-FROM students
-INNER JOIN scores
+        $sql = "SELECT AVG(scores.score), students.name
+FROM scores
+INNER JOIN students
 ON students.id = scores.student_id
-INNER JOIN subjects
-ON scores.subject_id = subjects.id 
-ORDER BY `scores`.`score` ASC LIMIT 10";
+GROUP BY students.name
+ORDER BY AVG(scores.score) ASC LIMIT 10";
         $stmt = $this->database->query($sql);
         $result = $stmt->fetchAll();
         $array = [];
         foreach ($result as $items) {
-            $score = new Score($items["name"], $items["subject_name"], $items["score"]);
+            $score = new Score($items["name"], $items["subject_name"], $items["AVG(scores.score)"]);
+            $score->setId($items["id"]);
+            array_push($array, $score);
+        }
+        return $array;
+    }
+    public function getAvg(){
+        $sql = "SELECT AVG(scores.score), students.name
+FROM scores
+INNER JOIN students
+ON students.id = scores.student_id
+GROUP BY students.name";
+        $stmt = $this->database->query($sql);
+        $result = $stmt->fetchAll();
+        $array = [];
+        foreach ($result as $items) {
+            $score = new Score($items["name"], $items["subject_name"], $items["AVG(scores.score)"]);
             $score->setId($items["id"]);
             array_push($array, $score);
         }
