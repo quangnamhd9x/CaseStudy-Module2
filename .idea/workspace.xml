@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c2a484-4a1f-45a7-af68-d4eefd8bc3c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/ScheduleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/Screenshot from 2020-09-13 19-49-49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/addSchedule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/updateSchedule.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ScheduleModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ScheduleModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/1-238.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/1-238.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/118296610_174730270884321_5826353277054259645_o.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/listStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/listStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/addSchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addSchedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/note.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/note.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/schedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/subjects.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/subjects.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,7 @@
       <workItem from="1600217767837" duration="15230000" />
       <workItem from="1600242431456" duration="15305000" />
       <workItem from="1600265719617" duration="14289000" />
-      <workItem from="1600304090535" duration="19142000" />
+      <workItem from="1600304090535" duration="20100000" />
     </task>
     <servers />
   </component>

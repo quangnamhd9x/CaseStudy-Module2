@@ -47,7 +47,7 @@ include_once "src/controller/UserController.php";
 <div align="center">
     <a class="btn btn-success" href="index.php?page=add">Thêm học sinh</a>
     <a class="btn btn-success" href="src/view/subjects.php">Xem điểm</a>
-    <a class="btn btn-success" href="src/view/schedule.php">Xem thời khóa biểu</a>
+    <a class="btn btn-success" href="http://localhost/CaseStudy-School/index.php?page=showSchedule">Xem thời khóa biểu</a>
     <a class="btn btn-success" href="http://localhost/CaseStudy-School/src/view/note.php">Đặt lời nhắc cho lớp</a>
     <a class="btn btn-success" href="index.php?page=viewRank">Top thi đua trong lớp</a>
     <a class="btn btn-success" href="index.php?page=viewFail">Học sinh lưu tâm</a>
@@ -75,12 +75,12 @@ include_once "src/controller/UserController.php";
             <td><?php echo ++$key; ?></td>
             <td><img style="width: 900px" src="<?php echo $info->getImage(); ?>"></td>
             <td><?php echo $info->getNote(); ?></td>
-            <td>
-                <button class="btn btn-info"><a href="index.php?page=addSchedule&id=<?php echo $info->getId(); ?>">Thêm</a></button>
-                <button class="btn btn-info"><a href="index.php?page=addSchedule&id=<?php echo $info->getId(); ?>">Sửa</a></button>
-                <button class="btn btn-danger"><a onclick="return confirm('Bạn chắc chứ?')"
+            <td style="text-align: center">
+                <a class="btn btn-info" href="index.php?page=addSchedule&id=<?php echo $info->getId(); ?>">Thêm</a>
+<!--                <button class="btn btn-info"><a href="index.php?page=addSchedule&id=--><?php //echo $info->getId(); ?><!--">Sửa</a></button>-->
+                <a class="btn btn-danger" onclick="return confirm('Bạn chắc chứ?')"
                                                   href="index.php?page=deleteSchedule&id=<?php echo $info->getId(); ?>">Xóa</a>
-                </button>
+                </a>
             </td>
         </tr>
     <?php endforeach; ?>
